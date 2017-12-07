@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     song = Song.new
-    genre = Genre.create(name: ?, genre)
+    genre = Genre.create(name: genre)
   end
 
   def drake_made_this
