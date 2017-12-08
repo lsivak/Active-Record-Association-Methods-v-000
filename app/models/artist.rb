@@ -7,21 +7,7 @@ class Artist < ActiveRecord::Base
 
 
   def get_genre_of_first_song
-    # prince = Artist.create(name: "Prince")
-    # song = Song.create(name: "Super Hip Music")
-    # genre = Genre.create(name: "Soul")
-    # self.songs.genre.first
-    # song.genre = genre
-    # song.save
-    # prince.songs << song
-    # self.songs.first
-    song = Artist.create(name: song)
-    song.artist = artist
-    song_title = Song.create(name: song_title)
-    artist.songs << song
-    song_title.artist
-    song.genre = Genre.create(name: genre)
-    song.genre = song.artist
+self.songs.first.genre
   end
 
   def song_count
