@@ -6,7 +6,7 @@ class Artist < ActiveRecord::Base
     
     artist = Artist.new
     genre = Genre.create(name: genre)
-    self.songs.first
+    songs.first
     # song = Artist.create(name: song)
     # song.artist = artist
     # song_title = Song.create(name: song_title)
