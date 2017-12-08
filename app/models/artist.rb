@@ -14,6 +14,7 @@ class Artist < ActiveRecord::Base
     song.genre = genre
     song.save
     prince.songs << song
+    self.songs.first
     # song = Artist.create(name: song)
     # song.artist = artist
     # song_title = Song.create(name: song_title)
